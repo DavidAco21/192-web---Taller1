@@ -1,5 +1,8 @@
 body{
     margin: 0;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -7,29 +10,25 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;  
+    justify-content: space-around;
+    
   
 }
 
 .logo{
-    padding: 10px;
+    margin: 10px 0 10px 10px;
     width: 80px;
+    
 }
 
-.nombreLogo{
+.header__nombreLogo{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
-    line-height: 41px;
-    text-align: left;
-    color:black;
-    width: 100%;
-}
-
-.globalSpace{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    color:white;
+   
+    
 }
 
 a{
@@ -37,12 +36,19 @@ a{
     text-decoration-line: none;
     font-family: Nunito Sans;
     font-style: normal;
-    color:black;
+    color:white;
 
 }
 
+.header__left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform .5s;
+}
+
 .global{
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 .button{
@@ -51,12 +57,73 @@ a{
     font-weight: 900;
     font-size: 14px;
     color: white;
-    background: #5BC071;
+    background-color: #5BC071;
     border-radius: 8px;
     padding: 10px 15px;
     border-style: none;
 }
 
+.banner{
+  
+    background-image: url("Imagenes/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.banner__principal{
+    height: 545px;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.banner__autor{
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    color: white;
+}
+
+.bannerCompleto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.banner__sandwichs{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+   margin-top: -10px;
+
+}
+
+.banner__slogan{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 200;
+    color: white;
+    
+}
+
+.button--cta{
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+}
+
+.header__left:hover{
+    transform: translate(20px, 0px);
+    transition: transform .5s ease;
+}
+
+.links:hover{
+    color: yellow;
+}
 
 
