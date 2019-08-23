@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+  
+}
+
+.logo{
+    padding: 10px;
+    width: 80px;
+}
+
+.nombreLogo{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 41px;
+    text-align: left;
+    color: white;
+    width: 100%;
+}
+
+.globalSpace{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    margin-right: 25px;
+    text-decoration-line: none;
+    font-family: Nunito Sans;
+    font-style: normal;
+    color: white;
+
+}
+
+.global{
+    margin-right: 25px;
+}
+
+.button{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+    background: #5BC071;
+    border-radius: 8px;
+    padding: 10px 15px;
+    border-style: none;
+}
+
+
+
+
