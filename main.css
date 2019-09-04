@@ -1,8 +1,6 @@
 body{
     margin: 0;
    
-    background-repeat: no-repeat;
-    background-size: cover;
     
 }
 
@@ -11,8 +9,6 @@ body{
     flex-direction: row;
     align-items: center;  
     justify-content: space-around;
-    
-  
 }
 
 .logo{
@@ -27,11 +23,13 @@ body{
     font-weight: 900;
     font-size: 24px;
     color:white;
+    text-decoration: none;
+    margin-left: 25px;
    
     
 }
 
-a{
+.links{
     margin-right: 25px;
     text-decoration-line: none;
     font-family: Nunito Sans;
@@ -47,20 +45,49 @@ a{
     transition: transform .5s;
 }
 
-.global{
+.header__global{
     margin-right: 35px;
+   
 }
+
+.header__global .links{
+    position: relative;
+    padding: 5px 0px;
+    
+}
+
+.header__global .links::before{
+    content: "";
+    display: block;
+    background: #f5db2f;
+    height: 1px;
+    width: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.header__global .links:hover::before{
+    width: 100%;
+}
+
+
 
 .button{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
-    color: white;
-    background-color: #5BC071;
+    color: black;
+    background-color: #f5db2f;
     border-radius: 8px;
     padding: 10px 15px;
     border-style: none;
+    text-decoration: none;
+    transition: transform .2s ease;
+    cursor: pointer;
+   
 }
 
 .banner{
@@ -68,24 +95,27 @@ a{
     background-image: url("Imagenes/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
 
 .banner__principal{
     height: 545px;
     display: flex;
     justify-content: center;
+    z-index: 3;
   
 }
 
 .banner__autor{
     font-family: Nunito Sans;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
     color: white;
+    margin-top: -50px;  
 }
 
-.bannerCompleto{
+.bannerComplete{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +129,7 @@ a{
     font-weight: 900;
     font-size: 50px;
     color: white;
-   margin-top: -10px;
+    margin-top: -10px;
 
 }
 
@@ -108,6 +138,8 @@ a{
     font-style: normal;
     font-weight: 200;
     color: white;
+    margin-top: -10px;
+    font-size: 30px;
     
 }
 
@@ -115,6 +147,11 @@ a{
     margin-top: 20px;
     width: 350px;
     height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    background-color: #f5db2f;
+
 }
 
 .header__left:hover{
@@ -122,8 +159,67 @@ a{
     transition: transform .5s ease;
 }
 
-.links:hover{
-    color: yellow;
+.button:hover{
+    transform: scale(0.8,0.8);
+    transition: transform .2s ease;
 }
+
+.links:hover{
+    color: #f5db2f;
+}
+
+@media screen and (max-width:800px){
+    .banner__sandwichs{
+        text-align: center;
+    }
+    .features{
+        flex-wrap: wrap;
+        
+    }
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f5db2f;
+    
+}
+
+.features__right{
+   width: 35%;
+   height: 35%;
+}
+
+.features__title{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.features__list{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    line-height: 350%;
+    background: url("/Imagenes/check.png") no-repeat left center;
+    padding-left: 2em;
+    
+}
+
+
 
 
