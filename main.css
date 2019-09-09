@@ -95,14 +95,16 @@ body{
     background-image: url("Imagenes/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
    
 }
 
 .banner__principal{
-    height: 545px;
     display: flex;
     justify-content: center;
     z-index: 3;
+    height: 80vh;;
+    
   
 }
 
@@ -168,34 +170,34 @@ body{
     color: #f5db2f;
 }
 
-@media screen and (max-width:800px){
-    .banner__sandwichs{
-        text-align: center;
-    }
-    .features{
-        flex-wrap: wrap;
-        
-    }
-}
 
 .features{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f5db2f;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
     
 }
 
 .features__right{
    width: 35%;
    height: 35%;
+   transition: transform .2s ease;
+}
+
+.features__right:hover{
+    transform: translate(10px, 0);
+    transition: transform .2s ease;
 }
 
 .features__title{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3em;
     line-height: 65px;
 }
 
@@ -218,6 +220,84 @@ li{
     background: url("/Imagenes/check.png") no-repeat left center;
     padding-left: 2em;
     
+}
+
+.drink{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.drink__banner{
+
+  width: 100%;
+}
+
+.drinks{
+    position: absolute;
+    font-family: Nunito Sans;
+    font-weight: 900;
+    text-decoration: underline;
+    color: white;
+    font-size: 2em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
+    cursor: pointer;
+   
+
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.top__absolute{
+    position:absolute;
+    font-size: 2.5em;
+    color: white;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 65px;
+}
+
+
+.ingredients__back{
+    width: 50%;
+}
+
+.ingredients__back--complete{
+    width: 100%;
+}
+
+@media screen and (max-width:800px){
+    .banner__sandwichs{
+        text-align: center;
+    }
+    .features{
+        flex-wrap: wrap;
+        
+    }
+    .features__title{
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .features__list{
+        text-align: center;
+    }
 }
 
 
