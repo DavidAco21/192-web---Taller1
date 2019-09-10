@@ -18,9 +18,8 @@ body{
 }
 
 .header__nombreLogo{
-    font-family: Nunito Sans;
+    font-family: Nunito Sans Black;
     font-style: normal;
-    font-weight: 900;
     font-size: 24px;
     color:white;
     text-decoration: none;
@@ -109,9 +108,10 @@ body{
 }
 
 .banner__autor{
-    font-family: Nunito Sans;
+    font-family: Cabin regular;
     font-style: normal;
     font-weight: 100;
+    
     font-size: 32px;
     color: white;
     margin-top: -50px;  
@@ -126,9 +126,7 @@ body{
 }
 
 .banner__sandwichs{
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 900;
+    font-family: Nunito Sans black;
     font-size: 50px;
     color: white;
     margin-top: -10px;
@@ -136,9 +134,8 @@ body{
 }
 
 .banner__slogan{
-    font-family: Nunito Sans;
+    font-family: Nunito Sans ExtraLight;
     font-style: normal;
-    font-weight: 200;
     color: white;
     margin-top: -10px;
     font-size: 30px;
@@ -222,31 +219,88 @@ li{
     
 }
 
-.drink{
+.drink__content{
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    height: 80vh;
+    background-image: url("/Imagenes/bebidass.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
 }
 
 .drink__banner{
+    width: 100%;
+}
 
-  width: 100%;
+
+.drink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+   
 }
 
 .drinks{
     position: absolute;
-    font-family: Nunito Sans;
-    font-weight: 900;
-    text-decoration: underline;
+    font-family: Nunito Sans Black;
     color: white;
+    padding-top: 1em;
     font-size: 2em;
-    padding-right: 1.5em;
-    padding-bottom: 1.5em;
     cursor: pointer;
-   
+    text-shadow: 0px 2px 4px #6ea0db;
+    
 
+}
+
+.drink__sodas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sodas__img{
+    padding-top: 10em;
+    width: 33%;
+    transition: transform 0.5s ease;
+    transform-origin: bottom;
+    
+}
+
+.hover{
+    position: absolute;
+    display: flex;
+    margin-left: -14%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform-origin: bottom;
+
+}
+
+.hover:hover{
+
+    opacity: 1;
+    transform: scale(1.01);
+    transform-origin: bottom;
+}
+
+.sodas__img:hover{
+
+    transform: scale(1.2);
+    transform-origin: bottom;
+    
+}
+
+.drinks--other{
+    color: #FC58BA;
+    font-size: 1.4em;
+    font-style: italic;
+    
 }
 
 .ingredients{
@@ -254,33 +308,52 @@ li{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+    z-index: 3;
 }
 
 .top{
     display: flex;
     flex-direction: row;
+    width: 100%;
     
-
+    
 }
 
-.top__absolute{
-    position:absolute;
-    font-size: 2.5em;
-    color: white;
-    font-family: Nunito Sans;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 65px;
-}
-
-
-.ingredients__back{
+.top__left{
+    background-image: url("/Imagenes/lechuga.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
 }
 
-.ingredients__back--complete{
+
+.text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.top__right{
+    width: 50%;
+}
+
+.bottom{
+    margin-top: -4px;
+}
+
+    
+
+.ingredients__lettuce{
+   width: 50%;
+}
+
+.ingredients__back{
     width: 100%;
 }
+
+
 
 @media screen and (max-width:800px){
     .banner__sandwichs{
@@ -298,6 +371,12 @@ li{
     .features__list{
         text-align: center;
     }
+
+    .drinks{
+        text-align: center;
+    }
+
+
 }
 
 
