@@ -168,7 +168,7 @@ body{
 }
 
 
-.features{
+.specifics{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -179,18 +179,18 @@ body{
     
 }
 
-.features__right{
+.specifics__right{
    width: 35%;
    height: 35%;
    transition: transform .2s ease;
 }
 
-.features__right:hover{
+.specifics__right:hover{
     transform: translate(10px, 0);
     transition: transform .2s ease;
 }
 
-.features__title{
+.specifics__title{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: bold;
@@ -198,7 +198,7 @@ body{
     line-height: 65px;
 }
 
-.features__list{
+.specifics__list{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
@@ -302,7 +302,7 @@ li{
     
 }
 
-.ingredients{
+.features{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -440,18 +440,16 @@ li{
     width: 100%;
     padding: 4em 2em 0em 2.7em;
     transition: transform 0.2s ease-in-out;
-}
-
-
-.arrowright{
-    width: 5%;
-
+    cursor: pointer;
 }
 
 .button--right{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    width: 100%;
+    background-color: #fb2424;
+}
+
+.arrowright{
+    width: 5%;
 }
 
 .slider__img:hover{

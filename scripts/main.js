@@ -31,7 +31,7 @@
         tape.style.transform = 'translate(' + mov + 'px, 0px)';
         
         if(count > tape.childElementCount - 5){
-            setTimeout(handleLast, 300);
+            setTimeout(handleLast, 100);
             count = 0;
         }
         
