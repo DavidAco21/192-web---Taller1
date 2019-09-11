@@ -1,5 +1,6 @@
 
-
+    var btn = document.querySelector('.header__btn');
+    var nav = document.querySelector('.header__global');
     var button = document.querySelector('.button--right');
     var slider = document.querySelector('.slider');
     var tape = slider.querySelector('.slider__tape');
@@ -20,6 +21,7 @@
 
     function handleClick(event) {
         console.log(event);
+        nav.classList.toggle('mainheader__nav--active');
         
         count++;
     
@@ -38,3 +40,6 @@
     }
 
     button.addEventListener('click', handleClick);
+    btn.addEventListener('click', handleClick);
+    
+

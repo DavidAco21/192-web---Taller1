@@ -468,21 +468,137 @@ li{
     font-style: italic;
 }
 
+.newsletter{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+
+}
+
+.newsletter__content{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--newsletter{
+    width: 90%;
+}
+
+.newsletter__text{
+    font-size: 1.5em;
+    font-family: Cabin Black;
+    text-align: center;
+}
+
+.inputs{
+    padding: .8em 4em;
+    border-radius: 5px;
+    border: .5px dashed;
+    
+}
+
+.newsletter__inputs{
+    padding: 2em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fb2424;
+
+    
+}
+
+.footer__a{
+    padding: 2em 2em 2em 2em;
+    text-decoration: none;
+    font-family: Nunito Sans;
+    color: black;
+    transition: all 0.5s ease;
+
+}
+
+.footer__a:hover{
+    transform: scale(1.5);
+    color: white;
+    
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__p{
+    padding: 0em 2em;
+    font-family: Nunito Sans;
+
+
+}
+
+.footer__nav{
+  
+}
+
+.footer__copyright{
+    font-family: Nunito Sans;
+    padding: 2em;
+}
+
+.header__btn{
+    background: none;
+    border: none;
+    display: none;
+}
+
+@media (max-width: 500px){
+    .header__global{
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0px;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        pointer-events: none;
+        transform: translate(-100%, 0%)
+    }
+
+    .header__global--active{
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(0%, 0%);
+    }
+
+    .header__btn{
+        display: block;
+        
+    }
+}
+
 
 @media screen and (max-width:800px){
     .banner__sandwichs{
         text-align: center;
     }
-    .features{
+    .specifics{
         flex-wrap: wrap;
         
     }
-    .features__title{
+    .specifics__title{
         font-size: 2.5em;
         text-align: center;
     }
 
-    .features__list{
+    .specifics__list{
         text-align: center;
     }
 
@@ -506,6 +622,10 @@ li{
 
     .bottom{
         flex-wrap: wrap;
+    }
+
+    .newsletter__content{
+        padding: 10em;
     }
 
 
