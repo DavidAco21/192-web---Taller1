@@ -4,6 +4,10 @@ body{
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -91,7 +95,7 @@ body{
 
 .banner{
   
-    background-image: url("Imagenes/banner.png");
+    background-image: url("./Imagenes/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -214,7 +218,7 @@ ul{
 
 li{
     line-height: 350%;
-    background: url("/Imagenes/check.png") no-repeat left center;
+    background: url("./Imagenes/check.png") no-repeat left center;
     padding-left: 2em;
     
 }
@@ -225,7 +229,7 @@ li{
     flex-direction: row;
     justify-content: center;
     height: 80vh;
-    background-image: url("/Imagenes/bebidass.png");
+    background-image: url("./Imagenes/bebidass.png");
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -324,7 +328,7 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url("/Imagenes/lechuga.png");
+    background-image: url("./Imagenes/lechuga.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -366,7 +370,7 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url("/Imagenes/chorizo.png");
+    background-image: url("./Imagenes/chorizo.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
@@ -378,7 +382,7 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(/Imagenes/vaso.png);
+    background-image: url("./Imagenes/vaso.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
@@ -387,7 +391,7 @@ li{
 .menu{
     
     height: 80vh;
-    background-image: url("/Imagenes/menufondo.png");
+    background-image: url("./Imagenes/menufondo.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
