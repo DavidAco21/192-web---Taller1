@@ -1,6 +1,6 @@
 
 
-    var button = document.querySelector('.button__right');
+    var button = document.querySelector('.button--right');
     var slider = document.querySelector('.slider');
     var tape = slider.querySelector('.slider__tape');
     var count = 0;
@@ -30,7 +30,7 @@
         var mov = slider.offsetWidth * -1 * count;
         tape.style.transform = 'translate(' + mov + 'px, 0px)';
         
-        if(count > tape.childElementCount - 2){
+        if(count > tape.childElementCount - 5){
             setTimeout(handleLast, 300);
             count = 0;
         }

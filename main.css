@@ -428,7 +428,7 @@ li{
 
 .slider__tape{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     transition: transform .3s ease-in-out;
 }
 
@@ -438,11 +438,38 @@ li{
 
 .slider__img{
     width: 100%;
-    padding: 4em 2em 0em 2em;
+    padding: 4em 2em 0em 2.7em;
+    transition: transform 0.2s ease-in-out;
 }
-.button__right{
-    padding: 5px;
+
+
+.arrowright{
+    width: 5%;
+
 }
+
+.button--right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.slider__img:hover{
+    transform: scale(1.1);
+
+}
+
+.menu__other{
+    font-family: Nunito Sans Black;
+    font-style: italic;
+}
+
+.menu__another{
+    color: black;
+    font-family: Nunito Sans Black;
+    font-style: italic;
+}
+
 
 @media screen and (max-width:800px){
     .banner__sandwichs{
