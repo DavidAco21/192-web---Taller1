@@ -306,20 +306,25 @@ li{
 .ingredients{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-around;
-    z-index: 3;
+   
 }
 
 .top{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;    
     width: 100%;
+    height: 80vh;
     
     
 }
 
 .top__left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-image: url("/Imagenes/lechuga.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -328,30 +333,58 @@ li{
 
 
 .text{
-    position: absolute;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+}
+
+.text__p{
+
+    font-size: 1.5em;
+    color: white;
+    font-family: Nunito Sans Regular;
+    text-align: center;
+    text-shadow: 0px 2px 4px black;
+   
+}
+
+.text__title{
+    font-size: 2.7em;
+    color: white;
+    font-family: Nunito Sans Black;
+    text-shadow: 0px 2px 4px black;
     text-align: center;
 
 }
 
 .top__right{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Imagenes/chorizo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
+    
 }
 
 .bottom{
-    margin-top: -4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Imagenes/vaso.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
 }
 
-    
-
-.ingredients__lettuce{
-   width: 50%;
-}
-
-.ingredients__back{
-    width: 100%;
-}
 
 
 
@@ -374,6 +407,24 @@ li{
 
     .drinks{
         text-align: center;
+    }
+
+    .top{
+        flex-direction: column;
+        height: 100%;
+        
+    }
+
+    .top__left{
+        width: 100%;
+    }
+
+    .top__right{
+        width: 100%;
+    }
+
+    .bottom{
+        flex-wrap: wrap;
     }
 
 
