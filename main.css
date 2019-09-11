@@ -265,7 +265,6 @@ li{
 }
 
 .sodas__img{
-    padding-top: 10em;
     width: 33%;
     transition: transform 0.5s ease;
     transform-origin: bottom;
@@ -385,8 +384,65 @@ li{
     height: 60vh;
 }
 
+.menu{
+    
+    height: 80vh;
+    background-image: url("/Imagenes/menufondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.menu__textgeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
+.menu__title{
+    font-size: 3em;
+    font-family: Nunito Sans Black;
+    color: black;
+    text-decoration: underline;
+    transition: transform  0.5s ease;
+
+}
+
+.menu__title:hover{
+    transform: scale(1.2);
+    
+    
+}
+
+.menu__text{
+    font-size: 1.8em;
+    color: black;
+    font-family: Nunito Sans regular;
+    text-align: center;
+    margin: 0;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider__tape{
+    display: flex;
+    align-items: flex-start;
+    transition: transform .3s ease-in-out;
+}
+
+.slider__tape--inactive{
+    transition: none;
+}
+
+.slider__img{
+    width: 100%;
+    padding: 4em 2em 0em 2em;
+}
+.button__right{
+    padding: 5px;
+}
 
 @media screen and (max-width:800px){
     .banner__sandwichs{
